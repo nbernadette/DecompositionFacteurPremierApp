@@ -35,6 +35,15 @@ export class AppComponent {
   }
 
   getPrimeNumber(n: number): number[]{
-    return [];
+    var result: number[] = [];
+    if (!n || n < 2)
+      result  = [];
+    for (var i = 2; i <= n; i++){
+      while (n % i === 0){
+        result.push(i);
+        n /= i;
+      }
+    }
+    return result;
   }
 }
