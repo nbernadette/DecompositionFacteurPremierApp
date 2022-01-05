@@ -1,0 +1,32 @@
+input[type=number] {
+    border: 2px solid blue;
+    border-radius: 4px;
+    margin-right: 6px;
+   flex: 3;
+  }
+
+div{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    flex: 1;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4d73b9;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #4d73b9;
+    color: white;
+}
+  
+
+form{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+}

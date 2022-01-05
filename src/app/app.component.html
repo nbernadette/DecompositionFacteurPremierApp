@@ -1,7 +1,10 @@
-<form (ngSubmit)="submitNumber()">
-  <input type="number" [formControl]="input">
-  <button [disabled]="input.invalid">Valider</button>
-</form>
+<div>
+  <h2>Application de décomposition en produit de facteurs premiers</h2>
+  <form (ngSubmit)="submitNumber()">
+    <input type="number" [formControl]="input">
+    <button [disabled]="input.invalid">Valider</button>
+  </form>  
+  <p>La décomposition en produits de nombres premiers est la suivante : <b>{{ stringToPrint }}</b></p>
+</div>
 
-<p>La décomposition en produits de nombres premiers est la suivante : {{ stringToPrint }}</p>
   
